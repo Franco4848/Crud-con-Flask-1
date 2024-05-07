@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+<body>
+    <div>
+    <div class="wrapper">
+        <form action="/add_product" method="POST">
+            <h1 id="#login"> ☆ Add Product ☆</h1>
+            
+            <div class="input-box">
+                <input type="text" name="categoria" placeholder="Categoria de producto" required>
+                <!-- <i class='bx bxs-envelope'></i> -->
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="nombre" placeholder="Nombre de producto" required> <!--placeholder para mostrar texto y cuando escribo se borra eso-->
+                <i class='bx bxs-user' ></i>  <!--Agrego icono-->
+            </div>
+
+            <div class="input-box">
+                <input type="float" name="precio" placeholder="Precio" required>
+                <i class='bx bxs-lock-alt' ></i> <!--Agrego icono-->
+            </div>
+         
+
+            <button type="submit" class="btn">Add</button>
+            
+            <div class="register-link">
+                <p>
+                    <a href="/tabla"> Volver a la lista</a>
+
+                    
+                </p>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>

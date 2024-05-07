@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask </title>
+    <link rel="stylesheet" href="../static//stylelista.css">
+
+</head>
+<body>
+
+    <div >
+        <table>
+            <tr>
+                <h1>Lista de productos</h1>
+            </tr>
+            <thead >
+                <tr class="encabezado" >
+                    <td >Codigo</td>
+                    <td>Categoria</td>
+                    <td>Nombre</td>
+                    <td>Precio</td>
+                </tr>
+            </thead> 
+            <tbody>
+                {% for producto in productos %}
+                <tr  class="encabezado">
+                    <td >{{producto['id'] }}</td>
+                    <td>{{producto['categoria']}}</td>
+                    <td>{{producto['nombre']}}</td>
+                    <td>{{producto['precio']}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="añadir">
+        <p>
+            <a href="/anadir">añadir producto</a>
+        </p>
+    </div>
+    
+</body>
+</html>

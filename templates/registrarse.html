@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+<body>
+    <div>
+    <div class="wrapper">
+        <form action="/add_contact" method="POST">
+            <h1 id="#login"> ☆ Registro ☆</h1>
+            
+            <div class="input-box">
+                <input tupe="E-mail" name="email" placeholder="E-mail" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required> <!--placeholder para mostrar texto y cuando escribo se borra eso-->
+                <i class='bx bxs-user' ></i>  <!--Agrego icono-->
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' ></i> <!--Agrego icono-->
+            </div>
+
+            <!-- <div class="input-box">
+                <input type="password" placeholder= "Confirm your password" required>
+                <i class='bx bxs-lock-alt' ></i> //agregar icono
+            </div>  -->
+
+            <div class="input-box2" >
+                <p>Introducir fecha de nacimiento</p>
+                <input type="date" name="fechanacimiento" placeholder=" Fecha de nacimiento" required>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="register-link">
+                <p>Do you already have an account?
+                    <a href="/admin"> Login</a>
+
+                    
+                </p>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
